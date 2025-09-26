@@ -1,32 +1,76 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from 'next/image';
 
 const Hero = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 3000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-      };
-  return (
-    <div>
-        <Slider {...settings} className='h-[85vh] overflow-hidden'>
-            <div className="h-auto bg-[#023F5E]">
-                <Image src={''} alt='homeimg' width={500} height={500} className='homeheroimg' />
-            </div>
-            <div className="h-auto bg-[#023F5E]">
-                <Image src={''} alt='homeimg' width={500} height={500} className='homeheroimg' />
-            </div>
-        </Slider>
-    </div>
-  )
-}
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+  };
 
-export default Hero
+  // Slide data: image + text
+  const slides = [
+    {
+      image: "/hero.png",
+      title: "Power Your Future with Solar",
+      description: "Sustainable, affordable, and renewable energy solutions.",
+      buttonText: "Get a Quote",
+      buttonLink: "#quote",
+    },
+    {
+      image: "/hero.png",
+      title: "Clean Energy for a Brighter Tomorrow",
+      description: "Join thousands of homes and businesses saving with solar.",
+      buttonText: "Learn More",
+      buttonLink: "#services",
+    },
+    {
+      image: "/hero.png",
+      title: "Smart Energy Solutions",
+      description: "Cut costs, reduce carbon, and take control of your energy.",
+      buttonText: "Contact Us",
+      buttonLink: "#contact",
+    },
+  ];
+
+  return (
+    <div className="h-[90vh] overflow-hidden">
+      <Slider {...settings}>
+        {slides.map((slide, idx) => (
+          <div key={idx}>
+            <div
+              className="relative h-[90vh] bg-center bg-cover bg-no-repeat"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center px-6">
+                <h2 className="text-4xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+                  {slide.title}
+                </h2>
+                <p className="text-lg lg:text-xl text-gray-200 mb-6 max-w-2xl">
+                  {slide.description}
+                </p>
+                <a
+                  href={slide.buttonLink}
+                  className="inline-block bg-primary text-black font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-primary/90 transition-colors"
+                >
+                  {slide.buttonText}
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+};
+
+export default Hero;
