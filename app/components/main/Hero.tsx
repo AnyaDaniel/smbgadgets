@@ -23,21 +23,21 @@ const Hero = () => {
       title: "Power Your Future with Solar",
       description: "Sustainable, affordable, and renewable energy solutions.",
       buttonText: "Get a Quote",
-      buttonLink: "#quote",
+      buttonLink: "/quote",
     },
     {
-      image: "/hero.png",
+      image: "/img1.jpg",
       title: "Clean Energy for a Brighter Tomorrow",
       description: "Join thousands of homes and businesses saving with solar.",
       buttonText: "Learn More",
-      buttonLink: "#services",
+      buttonLink: "/services",
     },
     {
-      image: "/hero.png",
+      image: "/img2.jpg",
       title: "Smart Energy Solutions",
       description: "Cut costs, reduce carbon, and take control of your energy.",
       buttonText: "Contact Us",
-      buttonLink: "#contact",
+      buttonLink: "/contact",
     },
   ];
 
@@ -60,7 +60,7 @@ const Hero = () => {
                 </p>
                 <a
                   href={slide.buttonLink}
-                  className="inline-block bg-primary text-black font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-primary/90 transition-colors"
+                  className="inline-block bg-primary text-white font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-primary/90 transition-colors"
                 >
                   {slide.buttonText}
                 </a>
