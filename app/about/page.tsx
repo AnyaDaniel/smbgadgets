@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function OurStory() {
   return (
     <main className="flex-grow bg-gradient-to-b pt-12 from-white to-gray-50 dark:from-gray-900 dark:to-gray-950">
@@ -20,9 +22,9 @@ export default function OurStory() {
                 Our Mission
               </h2>
               <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-                SolarCo was founded in 2010 with a simple mission: to make clean,
+                SMB Gadgets was founded with a simple mission: to make clean,
                 renewable energy accessible to everyone. From a small team of
-                passionate engineers and environmentalists, we’ve grown into a
+                passionate engineers and environmentalists, we've grown into a
                 trusted provider of solar solutions, helping thousands of homes
                 and businesses save money while reducing their carbon footprint.
               </p>
@@ -49,16 +51,12 @@ export default function OurStory() {
             </p>
             </div>
             <div className="flex-1">
-              <img
-                src="https://images.unsplash.com/photo-1581091870632-6c2d2b2c60d7?auto=format&fit=crop&w=1000&q=80"
-                alt="Solar values"
-                className="rounded-2xl shadow-lg object-cover w-full h-80"
-              />
+             <Image src="/img1.jpg" width={500} height={300} className="rounded-2xl shadow-lg object-cover w-full h-80" alt="vision"/>
             </div>
           </section>
 
           {/* Timeline */}
-          <section>
+          {/* <section>
             <h2 className="text-3xl font-bold text-center mb-12 text-[#023F5E] dark:text-white">
               Our Journey
             </h2>
@@ -89,7 +87,7 @@ export default function OurStory() {
                 </p>
               </div>
             </div>
-          </section>
+          </section> */}
 
           {/* Team */}
           <section>
