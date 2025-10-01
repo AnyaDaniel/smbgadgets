@@ -86,7 +86,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
           <p className="text-gray-300">📍 Abuja, Nigeria</p>
           <p className="text-gray-300">📞 +234 800 123 4567</p>
-          <p className="text-gray-300">✉️ support@luminous.ng</p>
+          <p className="text-gray-300">✉️ support@smbgadgets.com</p>
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-5">
