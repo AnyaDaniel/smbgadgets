@@ -18,7 +18,7 @@ export default function ContactPage() {
                   Get in Touch
                 </h2>
                 <p className="text-lg text-gray-600 dark:text-gray-400">
-                  We're here to help you with your solar energy needs. Reach out
+                  We&apos;re here to help you with your solar energy needs. Reach out
                   to us using the form below or contact us directly.
                 </p>
               </div>

@@ -24,13 +24,13 @@ export default function OurStory() {
               <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
                 SMB Gadgets was founded with a simple mission: to make clean,
                 renewable energy accessible to everyone. From a small team of
-                passionate engineers and environmentalists, we've grown into a
+                passionate engineers and environmentalists, we&apos;ve grown into a
                 trusted provider of solar solutions, helping thousands of homes
                 and businesses save money while reducing their carbon footprint.
               </p>
             </div>
             <div className="flex-1">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1000&q=80"
                 alt="Solar mission"
                 className="rounded-2xl shadow-lg object-cover w-full h-80"
@@ -122,7 +122,7 @@ export default function OurStory() {
                   className="text-center group bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-xl transition"
                 >
                   <div className="relative w-28 h-28 mx-auto">
-                    <img
+                    <Image
                       alt={member.name}
                       src={member.src}
                       className="w-full h-full rounded-full object-cover border-4 border-[#023F5E]/30 group-hover:border-[#023F5E] transition"
