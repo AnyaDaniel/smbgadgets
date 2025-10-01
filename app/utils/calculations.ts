@@ -1,4 +1,4 @@
-import {Appliance} from "../types/calculator.ts"
+import { Appliance } from "../types/calculator"
 
 // Calculate total load in Watts
 export function calculateTotalLoad(appliances: Appliance[]): number {
