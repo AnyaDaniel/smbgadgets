@@ -21,7 +21,7 @@ export default function Home() {
                 <p className="mt-4 text-base text-background-dark/70 dark:text-background-light/70">
                   At Solar Solutions Inc., we offer a range of solar energy
                   solutions tailored to meet the unique needs of our clients.
-                  Whether you're a homeowner, business owner, or industrial
+                  Whether you&apos;re a homeowner, business owner, or industrial
                   facility manager, we have the expertise and technology to help
                   you harness the power of the sun.
                 </p>
