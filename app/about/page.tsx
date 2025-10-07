@@ -31,8 +31,8 @@ export default function OurStory() {
             </div>
             <div className="flex-1">
               <Image
-                src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1000&q=80"
-                alt="Solar mission"
+                src="/img2.jpg"
+                alt="Solar mission" width={500} height={300}
                 className="rounded-2xl shadow-lg object-cover w-full h-80"
               />
             </div>
@@ -99,22 +99,22 @@ export default function OurStory() {
                 {
                   name: "Ethan Carter",
                   role: "CEO",
-                  src: "https://randomuser.me/api/portraits/men/32.jpg",
+                  src: "/img4.jpg",
                 },
                 {
                   name: "Olivia Bennett",
                   role: "Head of Engineering",
-                  src: "https://randomuser.me/api/portraits/women/44.jpg",
+                  src: "/img5.jpg",
                 },
                 {
                   name: "Noah Thompson",
                   role: "Sales Director",
-                  src: "https://randomuser.me/api/portraits/men/64.jpg",
+                  src: "/img6.jpg",
                 },
                 {
                   name: "Ava Harper",
                   role: "Customer Support Manager",
-                  src: "https://randomuser.me/api/portraits/women/68.jpg",
+                  src: "/img7.jpg",
                 },
               ].map((member, idx) => (
                 <div
@@ -124,7 +124,7 @@ export default function OurStory() {
                   <div className="relative w-28 h-28 mx-auto">
                     <Image
                       alt={member.name}
-                      src={member.src}
+                      src={member.src} width={112} height={112}
                       className="w-full h-full rounded-full object-cover border-4 border-[#023F5E]/30 group-hover:border-[#023F5E] transition"
                     />
                   </div>
